@@ -1,0 +1,126 @@
+$light: #eeeeee;
+$mid: #9fb8ad;
+$dark: #383e56;
+$orange: #fb743e;
+.singleCandidateDiv {
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  .infoDiv {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    img {
+      display: block;
+      width: 30%;
+      background-color: grey;
+    }
+    .nameeMailDiv {
+      width: 30%;
+      h6 {
+        margin: 10px;
+      }
+      h3 {
+        margin: 10px;
+      }
+    }
+    .dateEducationDiv {
+      width: 30%;
+      h6 {
+        margin: 10px;
+      }
+      h3 {
+        margin: 10px;
+      }
+    }
+  }
+  table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    td {
+      border: 1px solid white;
+      text-align: center;
+    }
+    thead {
+      background-color: $orange;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #fdc29a;
+    }
+  }
+}
+
+// MODAL
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 2px solid $orange;
+  padding: 25px;
+  z-index: 1000;
+  h2 {
+    margin-bottom: 20px;
+  }
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+.modalInfo {
+  display: flex;
+  p {
+    color: grey;
+  }
+  .personalInfo {
+    width: 50%;
+    margin-top: 20px;
+  }
+  .modalNotes {
+    margin-top: 20px;
+    width: 50%;
+    .personalNote {
+      color: black;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .infoDiv {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    img {
+      display: block;
+      width: 30%;
+      background-color: grey;
+    }
+    .nameeMailDiv {
+      width: 30%;
+      h6 {
+        margin: 10px;
+      }
+      h3 {
+        margin: 10px;
+        font-size: 16px;
+      }
+    }
+    .dateEducationDiv {
+      width: 30%;
+      h6 {
+        margin: 10px;
+      }
+      h3 {
+        margin: 10px;
+        font-size: 16px;
+      }
+    }
+  }
+}
